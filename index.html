@@ -1,0 +1,158 @@
+
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sam-smak Application</title>
+    <meta name="description" content="Платформа для розміщення та покупки страв домашнього та комерційного приготування. Страви можна купувати під замовлення або по наявності з доставкою. Основна ідея аплікації - підтримка локального виробника їжі." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta content="/static/images/samsmak.png" property="og:image" />
+    <style>
+        @font-face {
+            font-family: 'Raleway';
+            src: url('/static/fonts/raleway-medium-webfont.woff2') format('woff2'),
+                url('/static/fonts/raleway-medium-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        html {
+            box-sizing: border-box;
+            height: 100%;
+        }
+        body {
+            background-image: url("/static/images/bg.png");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-sizing: border-box;
+            color: #2f3138;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Raleway';
+            margin: 0;
+            min-height: 100%;
+        }
+        main {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: center;
+            padding: 30px;
+        }
+        footer {
+            box-sizing: border-box;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 46px;
+            margin: 64px 0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 30px;
+            margin: 0 0 2px;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #2f3138;
+            text-decoration: none;
+        }
+        .btn {
+            align-items: center;
+            background-color: #000;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color: #fff;
+            display: flex;
+            font-size: 16px;
+            line-height: 19px;
+            margin: 10px 24px;
+            min-width: 230px;
+            padding: 15px 24px;
+        }
+        .btn b {
+            display: block;
+        }
+        .btn svg {
+            margin: 0 15px 0 0;
+        }
+        @media (min-width: 768px) {
+            body {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            h1 {
+                font-size: 56px;
+                letter-spacing: 10.6167px;
+                line-height: 66px;
+                margin: 64px 0;
+            }
+            ul {
+                align-items: center;
+                display: flex;
+            }
+            footer {
+                padding: 30px 60px 60px;
+            }
+        }
+    </style>
+</head>
+
+<body class="page">
+    <main>
+        <svg width="78" height="76" viewBox="0 0 78 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>Sam-smak application logo</title>
+            <rect width="77.175" height="75.705" rx="15.68" fill="#0B8457"/>
+            <path d="M38.5184 19.5647C38.5184 19.5647 31.7809 21.2209 28.2284 16.3209C24.7218 11.4891 21.5541 11.0065 21.4776 10.9949C21.4766 10.9947 21.4761 10.9946 21.4762 10.9946C35.1325 2.65973 37.852 16.5414 37.852 16.5414C34.4955 11.8178 30.3599 11.955 30.3599 11.955C34.5298 12.8909 38.5184 19.5647 38.5184 19.5647ZM40.2285 19.8048C40.2285 19.8048 44.8002 20.6623 46.9513 17.0608C49.1024 13.4593 51.2339 13.0036 51.2339 13.0036C41.7181 7.76553 40.5323 17.6488 40.5323 17.6488C42.5658 14.1747 45.3392 14.0816 45.3392 14.0816C42.5903 14.9342 40.2285 19.8048 40.2285 19.8048ZM33.9418 27.9388C35.9891 26.4289 38.3901 25.4705 40.9145 25.1556C49.1906 24.1315 56.7513 30.1634 57.7999 38.66C58.781 46.0217 54.36 53.0326 47.2943 55.32C47.119 55.3698 46.9406 55.4074 46.7602 55.4327C44.9458 55.7015 43.2568 54.4491 42.9872 52.6348C42.8703 51.5847 43.277 50.5442 44.075 49.8516C44.1729 49.7683 44.2758 49.6899 44.3787 49.6116L44.3788 49.6115C44.6585 49.4271 44.9596 49.2774 45.2755 49.1656C46.7847 48.5776 48.1894 47.7503 49.4356 46.7156C52.1502 44.1578 54.3846 39.7723 51.8513 32.6134C50.8906 30.3929 49.2685 28.5226 47.2061 27.2577C46.2813 26.7313 45.2934 26.3246 44.2661 26.0474C44.0407 25.9919 43.8104 25.9429 43.5752 25.9004H43.634C40.2603 25.1884 36.7428 25.9282 33.9418 27.9388ZM59.0486 32.747C59.0023 32.6565 58.9551 32.5662 58.9073 32.4762L58.8975 32.4664C58.9485 32.5597 58.9989 32.6533 59.0486 32.747ZM59.0486 32.747C61.4344 37.4051 61.8459 42.8327 60.1813 47.8034V47.7103C60.0735 48.068 59.9559 48.4159 59.8334 48.7491C59.2304 50.2739 58.4368 51.7161 57.4716 53.0415C55.2125 55.9599 52.1006 58.1024 48.5683 59.1714C40.1452 61.0726 34.569 59.1371 30.894 56.0795C30.762 55.9509 30.623 55.8299 30.4775 55.7169C29.7303 55.0504 29.0418 54.3208 28.4195 53.5364C26.0234 50.2289 24.867 45.6719 24.867 45.6719C24.7532 45.2345 24.5887 44.8119 24.377 44.4126C24.2881 44.2341 24.1866 44.0621 24.0732 43.8981C23.1976 42.5418 21.7036 41.7112 20.0895 41.6833C17.3847 41.6833 15.1895 44.05 15.1895 46.9655C15.1908 47.2476 15.2121 47.5292 15.2532 47.8083C16.8718 56.9577 23.7415 64.2876 32.7669 66.4951C41.7923 68.7026 51.2697 65.3711 56.9287 58.0017C62.5228 50.7167 63.3415 40.8451 59.0486 32.747Z" fill="white"/>
+        </svg>
+        <h1>Sam-smak</h1>
+        <ul>
+            <li>
+                <a href="https://www.google.com/" class="btn" title="Download on the App Store">
+                    <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.7638 0C20.8922 4.62917 17.5816 7.84067 14.2749 7.63926C13.73 3.94502 17.5812 0 20.7638 0ZM0.00195312 18.8217C0.00195312 24.2086 4.28813 34.7861 9.4698 34.816H9.50366C10.7918 34.816 11.9275 34.3921 12.9313 34.0175L12.9401 34.0142C13.6762 33.7383 14.3715 33.4783 14.9214 33.4783C16.0061 33.4783 16.6626 33.7572 17.4236 34.0809L17.4239 34.0811C18.1759 34.4008 19.0285 34.7632 20.2345 34.7632C25.1642 34.7632 28.5589 25.6301 28.5589 25.2047C28.5589 24.5545 28.0637 24.2565 27.5843 23.9681L27.5817 23.9666L27.5803 23.9658C26.4921 23.311 24.2299 21.95 24.2299 18.4134C24.2299 15.4265 26.2286 13.9184 27.3243 13.0915L27.3248 13.0912L28.0917 12.5125L27.5588 11.7116C25.2837 8.29505 21.4995 8.02114 20.2515 8.02114H20.2415C18.5701 8.02114 17.1348 8.59187 15.9813 9.05107L15.958 9.06029C15.4229 9.27214 14.8241 9.50926 14.5678 9.50926C14.1335 9.50926 13.3526 9.22236 12.5975 8.94445C11.5178 8.54604 10.2935 8.09581 9.14707 8.09581C6.60305 8.09581 0.00195312 10.0222 0.00195312 18.8217Z" fill="white"/>
+                    </svg>
+                        <span>Download on the <b>App Store</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.google.com/" class="btn" title="Get it on Google Play">
+                    <svg width="35" height="38" viewBox="0 0 35 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.3475 18.7972L1.47183 36.9732C0.587907 36.3691 0.0631067 35.3643 0.0723867 34.2938V3.30066C0.0631067 2.2301 0.587907 1.2253 1.47183 0.621216L20.3475 18.7972Z" fill="#2196F3"/>
+                        <path d="M26.9512 12.4484L20.3464 18.7972L1.4707 0.621198C1.54182 0.566078 1.6159 0.514798 1.69254 0.467598C2.69014 -0.137042 3.93622 -0.156562 4.9523 0.416398L26.9512 12.4484Z" fill="#4CAF50"/>
+                        <path d="M34.9567 18.7972C34.969 20.0057 34.3123 21.122 33.2501 21.6985L26.9525 25.146L20.3477 18.7972L26.9525 12.4484L33.2501 15.8958C34.3123 16.4723 34.969 17.5886 34.9567 18.7972Z" fill="#FFC107"/>
+                        <path d="M26.9512 25.146L4.9523 37.178C3.93398 37.7421 2.69262 37.7226 1.69254 37.1268C1.6159 37.0796 1.54182 37.0284 1.4707 36.9732L20.3465 18.7972L26.9512 25.146Z" fill="#F44336"/>
+                    </svg>
+                    <span>Get it on <b>Google Play</b></span>
+                </a>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <h2>Contact us</h2>
+        <ul>
+            <li><a href="mailto:samsmakoffice@gmail.com" title=""><b>samsmakoffice@gmail.com</b></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
