@@ -31,10 +31,8 @@
         }
         header {
             display: flex;
+            justify-content: center;
             align-items: center;
-            max-width: 1200px;
-            margin: auto;
-            flex-direction: column;
         }
         main {
             padding: 30px;
@@ -50,6 +48,7 @@
             font-weight: bold;
             letter-spacing: 2px;
             line-height: 46px;
+            margin: 0 0 30px;
             text-align: center;
             text-transform: uppercase;
         }
@@ -91,36 +90,11 @@
             height: 45px;
             width: auto;
         }
-        .btn {
-            align-items: center;
-            background-color: #000;
-            border-radius: 8px;
-            box-sizing: border-box;
-            color: #fff;
-            display: flex;
-            font-size: 14px;
-            line-height: 16px;
-            margin: 5px;
-            min-width: 180px;
-            padding: 8px 20px;
-        }
-        .btn b {
-            display: block;
-        }
-        .btn svg {
-            margin: 0 15px 0 0;
-            height: 25px;
-            width: auto;
-        }
         @media (min-width: 768px) {
-            header {
-                flex-direction: row;
-                justify-content: space-between;
-            }
             h1 {
                 font-size: 56px;
                 line-height: 66px;
-                margin: 64px 0;
+                margin: 30px 0;
             }
             h2 {
                 font-size: 28px;
@@ -144,27 +118,6 @@
             </svg>
             <span>Sam-smak</span>
         </a>
-        <ul>
-            <li>
-                <a href="https://www.google.com/" class="btn" title="Download on the App Store">
-                    <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.7638 0C20.8922 4.62917 17.5816 7.84067 14.2749 7.63926C13.73 3.94502 17.5812 0 20.7638 0ZM0.00195312 18.8217C0.00195312 24.2086 4.28813 34.7861 9.4698 34.816H9.50366C10.7918 34.816 11.9275 34.3921 12.9313 34.0175L12.9401 34.0142C13.6762 33.7383 14.3715 33.4783 14.9214 33.4783C16.0061 33.4783 16.6626 33.7572 17.4236 34.0809L17.4239 34.0811C18.1759 34.4008 19.0285 34.7632 20.2345 34.7632C25.1642 34.7632 28.5589 25.6301 28.5589 25.2047C28.5589 24.5545 28.0637 24.2565 27.5843 23.9681L27.5817 23.9666L27.5803 23.9658C26.4921 23.311 24.2299 21.95 24.2299 18.4134C24.2299 15.4265 26.2286 13.9184 27.3243 13.0915L27.3248 13.0912L28.0917 12.5125L27.5588 11.7116C25.2837 8.29505 21.4995 8.02114 20.2515 8.02114H20.2415C18.5701 8.02114 17.1348 8.59187 15.9813 9.05107L15.958 9.06029C15.4229 9.27214 14.8241 9.50926 14.5678 9.50926C14.1335 9.50926 13.3526 9.22236 12.5975 8.94445C11.5178 8.54604 10.2935 8.09581 9.14707 8.09581C6.60305 8.09581 0.00195312 10.0222 0.00195312 18.8217Z" fill="white"/>
-                    </svg>
-                        <span>Завантажити з <b>App Store</b></span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.google.com/" class="btn" title="Get it on Google Play">
-                    <svg width="35" height="38" viewBox="0 0 35 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.3475 18.7972L1.47183 36.9732C0.587907 36.3691 0.0631067 35.3643 0.0723867 34.2938V3.30066C0.0631067 2.2301 0.587907 1.2253 1.47183 0.621216L20.3475 18.7972Z" fill="#2196F3"/>
-                        <path d="M26.9512 12.4484L20.3464 18.7972L1.4707 0.621198C1.54182 0.566078 1.6159 0.514798 1.69254 0.467598C2.69014 -0.137042 3.93622 -0.156562 4.9523 0.416398L26.9512 12.4484Z" fill="#4CAF50"/>
-                        <path d="M34.9567 18.7972C34.969 20.0057 34.3123 21.122 33.2501 21.6985L26.9525 25.146L20.3477 18.7972L26.9525 12.4484L33.2501 15.8958C34.3123 16.4723 34.969 17.5886 34.9567 18.7972Z" fill="#FFC107"/>
-                        <path d="M26.9512 25.146L4.9523 37.178C3.93398 37.7421 2.69262 37.7226 1.69254 37.1268C1.6159 37.0796 1.54182 37.0284 1.4707 36.9732L20.3465 18.7972L26.9512 25.146Z" fill="#F44336"/>
-                    </svg>
-                    <span>Завантажити з <b>Google Play</b></span>
-                </a>
-            </li>
-        </ul>
     </header>
     <main>
         <h1>Privacy policy</h1>
